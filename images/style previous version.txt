@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Merriweather:wght@400;700&family=Silkscreen:wght@400;700&family=Source+Serif+Pro&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-clip: none;
+  height: 100vh;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  flex: 1;
+  background-color: black;
+  margin: 0;
+  height: 80px;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.one {
+  color: white;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 45px;
+}
+
+.two {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-size: 45px;
+}
+
+.three {
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 39px;
+}
+
+.four {
+  color: white;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 45px;
+}
+
+.five {
+  color: white;
+  font-family: 'Silkscreen', cursive;
+  font-size: 38px;
+}
+
+.six {
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+}
+
+
+.main{
+  display: flex;
+  flex: 1;
+  padding: 130px;
+  gap: 200px;
+  margin-bottom: 30px;
+}
+
+.main a {
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.main ul {
+  gap: 90px;
+}
+
+.text {
+  font-family: Bebas Neue, sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.text span {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 120px;
+  background: -webkit-linear-gradient(rgb(0, 183, 255), rgb(0, 183, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+  font-size: 45px;
+  margin-bottom: 100px;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.subtext span {
+  font-size: 55px;
+  font-weight: 900;
+  font-family: 'Merriweather', serif;
+  color: white;
+  background-color: black;
+} 
+
+.right {
+  display: flex;
+  position: relative;
+}
+
+.image {
+  height: 500px;
+}
+
+.image-2 {
+  position: absolute;
+  height: 500px;
+  right: 40px;
+  top: 40px;
+  filter: grayscale(1);
+}
+
+.image-3 {
+  position: absolute;
+  height: 500px;
+  right: 90px;
+  top: 90px;
+}
+
+.content {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  margin: 200px;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 0;
+  padding: 0px;
+}
+
+.container p {
+  font-size: 120px;
+  justify-self: center;
+  font-family: 'Source Serif Pro', serif;
+  line-height: 1;
+  margin: 0;
+  overflow: hidden;
+}
+
+.text {
+  margin: 10px 15px;
+  padding: 0;
+
+}
+
+strong {
+  font-size: 270px;
+}
+
+.link {
+  display: flex;
+  font-family: 'Merriweather', serif;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.link a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}

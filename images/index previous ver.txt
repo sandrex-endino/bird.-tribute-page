@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="head">
+    <ul>
+      <li><a class="four">bird.</a></li>
+      <li><a class="five">.brid</a></li>
+      <li><a class="one">bird.</a></li>
+      <li><a class="two">bird.</a></li>
+      <li><a class="three">bird.</a></li>
+      <li><a class="four">bird.</a></li>
+      <li><a class="five">.brid</a></li>
+      <li><a class="two">bird.</a></li>
+      <li><a class="one">bird.</a></li>
+      <li><a class="six">bird.</a></li>
+      <li><a class="one">bird.</a></li>
+      <li><a class="five">.brid</a></li>
+      <li><a class="six">bird.</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="left">
+      <div class="text"> the <span>bird.</span> is the word</div>	
+      <div class="subtext">just a bunch of dudes tryna make <span>good music</span> and <span>nice clothes.</span>  
+       #vibecore</div>
+       <ul>
+        <li><a href="https://www.instagram.com/bird.mnl/?hl=en">instagram</a></li>
+        <li><a href="https://www.facebook.com/bird.mnl/">facebook</a></li>
+        <li><a href="https://open.spotify.com/artist/5ZR9GMo2iB8nxetEtvRdey">music</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdftuLtNefw3AFaBkeiWRk3h0h9Qw3DKDz3iu_JAkfLNENSQg/viewform">shirt</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="image-holder">
+        <img class="image" src="bird.jpg" alt="band image">
+        <img class="image-2" src="bird.jpg" alt="band image">
+        <img class="image-3" src="bird.jpg" alt="band image">
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="text">
+        <p>
+          <strong>weekend</strong>, lifting this weight from me
+        </p>
+
+        <div class="link">
+          <a href="https://www.youtube.com/watch?v=Jj7PIMD2G4Y">weekend - bird.</a>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+
+  
+</body>
+</html>
