@@ -114,7 +114,7 @@ a {
 }
 
 /* bottomstyles */
-.bottom{
+.filler{
   display: flex;
   background-color: #4E6C50;
   width: auto;
@@ -137,24 +137,17 @@ a {
   padding: 30px;
   box-sizing: border-box;
 }
-
-
-
+ 
 .lyric strong {
-  font-size: 180px;
+  font-size: 190px;
   font-style: italic;
 }
 
 .lyric {
   font-family: 'Source Serif Pro', serif;
   color: white;
-  font-size: 120px;
+  font-size: 110px;
 }
-
-
-
-
-
 
 .song a {
   background-color: black;
@@ -162,17 +155,14 @@ a {
   font-size: 50px;
 }
 
-.song.a {
+.song {
   display: flex;
   justify-content: end;
-}
-
-.song.b {
-  display: flex;
-  justify-content: start;
+  margin-top: 30px;
 }
 
 
+/* media queries */
 /* mobile phones screen */
 @media screen and (max-width: 480px) {
 
@@ -209,16 +199,27 @@ a {
     height: 400px ;
   }
 
-  .bottom {
+  .filler {
     width: auto;
+    height: 50vh;
   }
 
   .lyric-container {
     overflow: hidden;
+    flex-wrap: wrap;
   }
 
-  .lyric.a, .lyric.b {
+  .lyric strong {
+    font-size: 30px;
+  }
+
+  .lyric {
     font-size: 25px;
+  }
+
+  .song a{
+    font-size: 14px;
+    margin-top: 30px;
   }
 
 }
