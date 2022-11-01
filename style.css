@@ -231,13 +231,14 @@ a {
 }
 .merch-holder img {
   margin: 0;
-  width: 390px;
+  width: 380px;
 }
 
 .merch-name {
   font-family:'Source Serif Pro', serif;
-  font-size: 22px;
+  font-size: 24px;
   color: black;
+  margin-top: -15px;
 }
 
 /* media queries */
@@ -315,6 +316,12 @@ a {
     width: 350px;
   }
 
+  .merch-name {
+    font-family:'Source Serif Pro', serif;
+    font-size: 22px;
+    color: black;
+    margin-top: -10px;
+  }
 }
 
 /* tablets to regular pc screen */
