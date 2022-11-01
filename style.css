@@ -300,6 +300,21 @@ a {
     margin-top: 30px;
   }
 
+  .shirt-section, .shirt-section-container, .shirt-section-merch, .merch-container, .merch-holder {
+    width: auto;
+  }
+  
+  .shirt-section-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .merch-holder img {
+    margin: 0;
+    width: 350px;
+  }
+
 }
 
 /* tablets to regular pc screen */
