@@ -114,8 +114,7 @@ a {
 }
 
 /* bottomstyles */
-
-.bottom.a {
+.bottom{
   display: flex;
   background-color: #4E6C50;
   width: auto;
@@ -125,17 +124,9 @@ a {
   justify-content: center;
 }
 
-.bottom.b {
-  display: flex;
-  background-color: rgb(19, 175, 247);
-  width: auto;
-  height: 100vh;
-  margin: 0;
-  padding: 10%;
-  justify-content: center;
-}
 
-.lyric-container.a{
+
+.lyric-container{
   display: flex;
   flex-direction: column;
   border: 1px solid white;
@@ -147,39 +138,20 @@ a {
   box-sizing: border-box;
 }
 
-.lyric-container.b{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid white;
-  overflow: visible;
-  height: 90%;
-  width: 90%;
-  justify-content: center;
-  padding: 30px;
-  box-sizing: border-box;
-}
+
 
 .lyric strong {
   font-size: 180px;
   font-style: italic;
 }
 
-.lyric.a {
+.lyric {
   font-family: 'Source Serif Pro', serif;
   color: white;
   font-size: 120px;
 }
 
-.lyric.b {
-  font-family: 'Source Serif Pro', serif;
-  color: white;
-  text-align: end;
-  font-size: 120px;
-}
 
-.lyric.b span {
-  font-family: 'Merriweather', serif;
-}
 
 
 
@@ -201,7 +173,7 @@ a {
 }
 
 
-
+/* mobile phones screen */
 @media screen and (max-width: 480px) {
 
   .header {
@@ -237,9 +209,21 @@ a {
     height: 400px ;
   }
 
+  .bottom {
+    width: auto;
+  }
+
+  .lyric-container {
+    overflow: hidden;
+  }
+
+  .lyric.a, .lyric.b {
+    font-size: 25px;
+  }
+
 }
 
-
+/* tablets to regular pc screen */
 @media screen and (max-width: 980px) {
 
   .nav {
