@@ -104,25 +104,26 @@ a {
 
 .title-text {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .title-text span {
   font-family: 'Source Serif Pro', serif;
-  font-size: 87px;
+  font-size: 90px;
   color: rgb(19, 175, 247);
 }
 
 .subtitle-text {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .subtitle-text a{
   font-family: 'Source Serif Pro', serif;
   background-color: black;
   color: white;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .right {
@@ -256,19 +257,21 @@ a {
   display: flex;
   background-color: black;
   width: auto;
-  height: 50px;
+  height: 40px;
   position: relative;
   justify-content: center;
+  align-items: center;
 }
 
 .footer p {
   font-family: 'Courier New', Courier, monospace;
   color: white;
+  font-size: 16px;
 }
 /* media queries */
 /* mobile phones screen */
 
-
+/*
 @media screen and (max-width: 480px) {
 
   .header {
@@ -355,6 +358,8 @@ a {
 }
 
 /* tablets to regular pc screen */
+
+/*
 @media screen and (max-width: 1100px) {
 
   .nav {
@@ -423,3 +428,4 @@ a {
     display: none
   }
 }
+
