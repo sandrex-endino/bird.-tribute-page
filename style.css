@@ -8,15 +8,25 @@ body {
   repeat; */
 }
 
-#myVideo {
+#myVideo-1 {
   position: fixed;
   object-fit: contain;
   right: 0;
   bottom: 0;
-  top: ;
   min-width: 100%;
   min-height: 100%;
 }
+
+
+#myVideo-4 {
+  position: absolute;
+  object-fit: contain;
+  top: 40px;
+  right: -900px;
+  width: 675px;
+  z-index: 500;
+}
+
 
 /* header styles */
 
@@ -51,7 +61,6 @@ h1:hover {
 .nav {
   display: flex;
   align-items: center;
-  
 }
 
 ul {
@@ -221,6 +230,7 @@ a {
 .shirt-section-merch {
   margin: 0;
   display: flex;
+  position: relative;
 }
 
 .merch-holder {
@@ -241,8 +251,24 @@ a {
   margin-top: -15px;
 }
 
+/* footer */
+.footer {
+  display: flex;
+  background-color: black;
+  width: auto;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+}
+
+.footer p {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
 /* media queries */
 /* mobile phones screen */
+
+
 @media screen and (max-width: 480px) {
 
   .header {
@@ -322,10 +348,14 @@ a {
     color: black;
     margin-top: -10px;
   }
+
+  #myVideo-2, #myVideo-3, #myVideo-4 {
+    display: none;
+  } 
 }
 
 /* tablets to regular pc screen */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
 
   .nav {
     display: none;
@@ -354,7 +384,42 @@ a {
   }
 
   .image-container img {
-    height: 400px ;
+    height: 600px ;
   }
 
+  .lyric-container {
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+
+  .lyric strong {
+    font-size: 80px;
+  }
+
+  .lyric {
+    font-size: 40px;
+  }
+
+  .song a{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .filler {
+    width: auto;
+    height: 50vh;
+  }
+
+  #myVideo-4 {
+    top: 40px;
+  right: -250px;
+  width: 675px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #myVideo-4 {
+    display: none
+  }
 }
