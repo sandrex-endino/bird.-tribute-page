@@ -21,9 +21,9 @@ body {
 #myVideo-4 {
   position: absolute;
   object-fit: contain;
-  top: 40px;
-  right: -900px;
-  width: 675px;
+  top: 0px;
+  right: -355px;
+  width: 700px;
   z-index: 500;
 }
 
@@ -146,7 +146,7 @@ a {
 /* filler styles */
 .filler{
   display: flex;
-  background-color: #4E6C50;
+  background-color: rgb(19, 175, 247);
   width: auto;
   height: 100vh;
   margin: 0;
@@ -199,9 +199,9 @@ a {
   width: auto;
   height: auto;
   background-color: #ebebeb;
-  padding: 90px;
+  padding: 50px;
   justify-content: center;
-  margin: 0;
+  margin: 0px;
   position: relative;
 }
 
@@ -213,18 +213,20 @@ a {
 }
 
 .shirt-section-title {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 80px;
   margin-bottom: 50px;
 }
 
 .shirt-section-title span {
+  font-family: 'Source Serif Pro', serif;
   color: rgb(19, 175, 247);  
 }
 
 .merch-container {
   margin: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-wrap: wrap;
   width: auto;
 }
@@ -272,7 +274,226 @@ a {
 /* media queries */
 /* mobile phones screen */
 
-/*
+/* new media query 11/3/2022 */
+
+@media (max-width: 820px) {
+  /* smallest screen size */
+
+  #myVideo-4 {
+    position: absolute;
+    object-fit: contain;
+    width: 200px;
+    z-index: 500;
+    display: none;
+  }
+
+
+
+  .header {
+    width: auto;
+    justify-content: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .content {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .title-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .title-text span {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 110px;
+    text-align: center;
+    color: rgb(19, 175, 247);
+  }
+
+  .subtitle-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.3;
+  }
+  
+  .subtitle-text a{
+    font-family: 'Source Serif Pro', serif;
+    color: white;
+    font-size: 33px;
+  }
+
+  
+  .image-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 2px solid black;
+  }
+  
+  .image-container img {
+    height: 430px;
+  }
+  
+  .filler{
+    display: flex;
+    background-color: rgb(19, 175, 247);
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10%;
+    justify-content: center;
+    position: relative;
+  }
+
+  .lyric-container{
+    display: flex;
+    flex-direction: column;
+    border: 4px solid white;
+    overflow: visible;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: .8;
+  }
+   
+  .lyric strong {
+    font-size: 60px;
+    font-style: italic;
+  }
+  
+  .lyric {
+    font-family: 'Source Serif Pro', serif;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .song a {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .song {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+
+  .shirt-section {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #ebebeb;
+    padding: 50px;
+    justify-content: center;
+    margin: 0px;
+    position: relative;
+  }
+  
+  .shirt-section-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+  }
+  
+  .shirt-section-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin-bottom: -10px;
+    text-align: center;
+  }
+  
+  .shirt-section-title span {
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(19, 175, 247);  
+  }
+
+  .merch-container {
+    margin: 0;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .merch-holder img {
+    margin: 0;
+    width: 320px;
+  }
+
+  .footer {
+    display: flex;
+    background-color: black;
+    width: auto;
+    height: 40px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1250px) {
+
+  .merch-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+}
+
+@media (min-width: 1251px) and (max-width: 1600px) {
+  .merch-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* previous query
 @media screen and (max-width: 480px) {
 
   .header {
