@@ -28,6 +28,7 @@ body {
 }
 
 
+
 /* header styles */
 
 .header {
@@ -257,16 +258,22 @@ a {
 
 /* footer */
 .footer {
-  display: flex;
+  display: sticky;
   background-color: black;
   width: auto;
-  height: 40px;
+  height: 50px;
   position: relative;
   justify-content: center;
   align-items: center;
 }
 
-.footer p {
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text p {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-size: 16px;
@@ -287,8 +294,6 @@ a {
     display: none;
   }
 
-
-
   .header {
     width: auto;
     justify-content: center;
@@ -307,7 +312,6 @@ a {
     width: auto;
     align-items: center;
     justify-content: center;
-    
   }
 
   .title-text {
@@ -458,6 +462,60 @@ a {
 }
 
 @media (min-width: 821px) and (max-width: 1250px) {
+  /* medium screen size */
+  
+  .left, .title-text, .subtitle-text {
+    z-index: 1000;
+  }
+
+  .filler{
+    display: flex;
+    background-color: rgb(19, 175, 247);
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10%;
+    justify-content: center;
+    position: relative;
+  }
+
+  .lyric-container{
+    display: flex;
+    flex-direction: column;
+    border: 4px solid white;
+    overflow: visible;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: .8;
+  }
+   
+  .lyric strong {
+    font-size: 60px;
+    font-style: italic;
+  }
+  
+  .lyric {
+    font-family: 'Source Serif Pro', serif;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .song a {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .song {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
 
   .merch-container {
     margin: 0;
@@ -470,6 +528,7 @@ a {
 }
 
 @media (min-width: 1251px) and (max-width: 1600px) {
+  
   .merch-container {
     margin: 0;
     display: grid;
@@ -479,6 +538,20 @@ a {
   }
 }
 
+@media (min-width: 1601px) {
+  .merch-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .merch-holder img {
+    margin: 0;
+    width: 310px;
+  }
+}
 
 
 
