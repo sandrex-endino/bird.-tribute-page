@@ -21,8 +21,6 @@ body {
 #myVideo-4 {
   position: absolute;
   object-fit: contain;
-  top: 0px;
-  right: -355px;
   width: 700px;
   z-index: 500;
 }
@@ -256,9 +254,42 @@ a {
   margin-top: -15px;
 }
 
+/* video-holder */
+
+.video-holder {
+  background-color: #ebebeb;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: auto;
+  height: 200px;
+  padding: 10%;
+}
+
+
+/* links */
+.links {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: 750px;
+  background-color: #ebebeb;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-decoration: underline;
+  font-size: 80px;
+}
+
 /* footer */
 .footer {
-  display: sticky;
+  display: flex;
   background-color: black;
   width: auto;
   height: 50px;
@@ -289,9 +320,7 @@ a {
   #myVideo-4 {
     position: absolute;
     object-fit: contain;
-    width: 200px;
-    z-index: 500;
-    display: none;
+    width: 360px;
   }
 
   .header {
